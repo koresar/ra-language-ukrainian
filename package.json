@@ -1,0 +1,24 @@
+{
+  "name": "ra-language-ukrainian",
+  "version": "2.0.0-rc",
+  "description": "Ukrainian translations for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koresar/ra-language-ukrainian.git"
+  },
+  "keywords": [
+    "react",
+    "react-admin",
+    "translation"
+  ],
+  "author": "Vasyl Boroviak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koresar/ra-language-ukrainian/issues"
+  },
+  "homepage": "https://github.com/koresar/ra-language-ukrainian"
+}
