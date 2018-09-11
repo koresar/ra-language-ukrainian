@@ -18,7 +18,9 @@ const messages = {
     'ua': ukrainianMessages,
 };
 
-<Admin locale="ua" messages={messages}>
+const i18nProvider = locale => messages[locale];
+
+<Admin locale="ua" i18nProvider={i18nProvider}>
   ...
 </Admin>
 ```
