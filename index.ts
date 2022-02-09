@@ -1,4 +1,6 @@
-module.exports = {
+import { TranslationMessages } from 'ra-core';
+
+const ukrainianMessages : TranslationMessages = {
     ra: {
         action: {
             add_filter: 'Додати фільтр',
@@ -7,8 +9,10 @@ module.exports = {
             bulk_actions: '%{smart_count} обрано',
             cancel: 'Відмінити',
             clear_input_value: 'Очистити',
-            clone: 'Створити дублікат',
+            clone: 'Дублювати',
+            confirm: 'Підтвердити',
             create: 'Створити',
+            create_item: 'Створити %{item}',
             delete: 'Видалити',
             edit: 'Редагувати',
             export: 'Експортувати',
@@ -18,23 +22,36 @@ module.exports = {
             remove: 'Видалити',
             save: 'Зберегти',
             search: 'Пошук',
+            select_all: 'Обрати всі',
+            select_row: 'Обрати цей рядок',
             show: 'Перегляд',
             sort: 'Сортувати',
             undo: 'Скасувати',
+            unselect: 'Зняти обрання',
+            expand: 'Розкрити',
+            close: 'Закрити',
+            open_menu: 'Меню',
+            close_menu: 'Закрити меню',
+            update: 'Оновити',
+            move_up: 'Вгору',
+            move_down: 'Вниз',
         },
         boolean: {
             true: 'Так',
             false: 'Ні',
+            null: ' '
         },
         page: {
             create: 'Створити %{name}',
-            dashboard: 'Головна',
+            dashboard: 'Дашборд',
             edit: '%{name} #%{id}',
             error: 'Щось пішло не так',
             list: '%{name}',
             loading: 'Завантаження',
             not_found: 'Не знайдено',
             show: '%{name} #%{id}',
+            empty: 'Ще немає %{name}.',
+            invite: 'Бажаєте додати?',
         },
         input: {
             file: {
@@ -55,6 +72,10 @@ module.exports = {
                 single_missing:
                     "Пов'язане посилання більше не доступно.",
             },
+            password: {
+                toggle_visible: 'Сховати пароль',
+                toggle_hidden: 'Показати пароль',
+            },
         },
         message: {
             about: 'Довідка',
@@ -63,6 +84,11 @@ module.exports = {
                 'Ви дійсно хочете видалити це %{name}? |||| Ви впевнені що хочете видалити ці %{smart_count} %{name}?',
             bulk_delete_title:
                 'Видалити %{name} |||| Видалити %{smart_count} %{name} елементів',
+            bulk_update_content:
+                'Ви дійсно хочете оновити це %{name}? |||| Ви впевнені що хочете оновити ці %{smart_count} %{name}?',
+            bulk_update_title:
+                'Оновити %{name} |||| Оновити %{smart_count} %{name}',
+
             delete_content: 'Ви впевнені що хочете видалити цей елемент?',
             delete_title: 'Видалити %{name} #%{id}',
             details: 'Деталі',
@@ -74,6 +100,8 @@ module.exports = {
             not_found:
                 'Ви набрали невірний URL-адресу, або перейшли за хибним посиланням.',
             yes: 'Так',
+            unsaved_changes:
+            "Деякі зміни не були збережені.Ви впевнені що хочете проігнорувати їх?",
         },
         navigation: {
             no_results: 'Результатів не знайдено',
@@ -86,8 +114,15 @@ module.exports = {
             page_rows_per_page: 'Рядків на сторінці:',
             next: 'Наступна',
             prev: 'Попередня',
+            skip_nav: 'Skip to content',
+        },
+        sort: {
+            sort_by: 'Сортувати за %{field} %{order}',
+            ASC: 'висхідний',
+            DESC: 'низхідний',
         },
         auth: {
+            auth_check_error: 'Щоб продовжити, будь ласка залогінтесь',
             user_menu: 'Профіль',
             username: "Ім'я користувача",
             password: 'Пароль',
@@ -104,7 +139,11 @@ module.exports = {
             http_error: 'Помилка сервера',
             data_provider_error:
                 'Помилка в dataProvider. Перевірте деталі в консолі.',
+            i18n_error:
+                'Не вдалося завантажити переклад для вибраної мови',
             canceled: 'Дія відмінена',
+            logged_out: 'Ваша логін-сессія завершена, будь ласка залогінтесь знову.',
+            not_authorized: "Немає доступу до цього ресурсу.",
         },
         validation: {
             required: "Обов'язково для заповнення",
@@ -119,3 +158,5 @@ module.exports = {
         },
     },
 };
+
+export default ukrainianMessages ;
