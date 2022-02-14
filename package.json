@@ -1,18 +1,36 @@
 {
   "name": "ra-language-ukrainian",
-  "version": "2.0.0",
+  "version": "3.19.8",
   "description": "Ukrainian translations for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
-  "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/koresar/ra-language-ukrainian.git"
   },
+  "files": [
+    "*.md",
+    "lib",
+    "esm",
+    "src"
+  ],
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "tsc --outDir esm --module es2015 --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ra-core": "^3.19.8",
+    "react-admin": "^3.19.8",
+    "rimraf": "^3.0.2"
+  },
   "keywords": [
     "react",
     "react-admin",
+    "admin-on-rest",
     "translation"
   ],
   "author": "Vasyl Boroviak",

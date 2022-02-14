@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationMap": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node"
+  },
+  "exclude": ["**/*.spec.ts", "**/*.spec.tsx", "**/*.spec.js"],
+  "include": ["src"]
+}
