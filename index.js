@@ -33,6 +33,8 @@ module.exports = {
             update: "Оновити",
             move_up: "Вгору",
             move_down: "Вниз",
+            open: "Відкрити",
+            toggle_theme: "Змінити тему",
         },
         boolean: {
             true: "Так",
@@ -79,7 +81,6 @@ module.exports = {
             bulk_update_content:
                 "Ви дійсно хочете оновити це %{name}? |||| Ви впевнені що хочете оновити ці %{smart_count} %{name}?",
             bulk_update_title: "Оновити %{name} |||| Оновити %{smart_count} %{name}",
-
             delete_content: "Ви впевнені що хочете видалити цей елемент?",
             delete_title: "Видалити %{name} #%{id}",
             details: "Деталі",
@@ -98,10 +99,16 @@ module.exports = {
             page_out_from_end: "Неможливо переміститися далі останньої сторінки",
             page_out_from_begin: "Номер сторінки не може бути менше 1",
             page_range_info: "%{offsetBegin}-%{offsetEnd} із %{total}",
+            partial_page_range_info: "%{offsetBegin}-%{offsetEnd} з більше ніж %{offsetEnd}",
+            current_page: "Сторінка %{page}",
+            page: "Перейти на сторінку %{page}",
+            first: "Перейти на першу сторінку",
+            last: "Перейти на останню сторінку",
+            previous: "Перейти на попередню сторінку",
             page_rows_per_page: "Рядків на сторінці:",
             next: "Наступна",
             prev: "Попередня",
-            skip_nav: "Skip to content",
+            skip_nav: "Перейти до змісту",
         },
         sort: {
             sort_by: "Сортувати за %{field} %{order}",
@@ -140,6 +147,17 @@ module.exports = {
             email: "Хибний email",
             oneOf: "Повинен бути одним з: %{options}",
             regex: "Повинен відповідати певним форматом (регулярний вираз): %{pattern}",
+        },
+        saved_queries: {
+            label: "Зберегти запит",
+            query_name: "Назва запиту",
+            new_label: "Зберегти поточний запит...",
+            new_dialog_title: "Зберегти поточний запит як",
+            remove_label: "Видалити збережений запит",
+            remove_label_with_name: 'Видалити запит "%{name}"',
+            remove_dialog_title: "Видалити збережений запит?",
+            remove_message: "Ви впевнені, що бажаєте видалити цей елемент зі списку збережених запитів?",
+            help: "Відфільтруйте список і збережіть цей запит на потім",
         },
     },
 };
