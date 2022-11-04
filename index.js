@@ -35,6 +35,7 @@ module.exports = {
             move_down: "Вниз",
             open: "Відкрити",
             toggle_theme: "Змінити тему",
+            select_columns: "Стовпці",
         },
         boolean: {
             true: "Так",
