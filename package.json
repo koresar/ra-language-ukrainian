@@ -1,6 +1,6 @@
 {
   "name": "ra-language-ukrainian",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "Ukrainian translations for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
   "main": "index.js",
   "scripts": {
