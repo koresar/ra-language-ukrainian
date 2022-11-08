@@ -17,6 +17,7 @@ module.exports = {
             list: "Перелік",
             refresh: "Оновити",
             remove_filter: "Прибрати фільтр",
+            remove_all_filters: "Прибрати всі фільтри",
             remove: "Видалити",
             save: "Зберегти",
             search: "Пошук",
