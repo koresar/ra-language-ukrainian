@@ -6,6 +6,7 @@ module.exports = {
             back: "Повернутися назад",
             bulk_actions: "%{smart_count} обрано",
             cancel: "Відмінити",
+            clear_array_input: 'Очистити всі елементи',
             clear_input_value: "Очистити",
             clone: "Дублювати",
             confirm: "Підтвердити",
@@ -83,6 +84,7 @@ module.exports = {
             bulk_update_content:
                 "Ви дійсно хочете оновити це %{name}? |||| Ви впевнені що хочете оновити ці %{smart_count} %{name}?",
             bulk_update_title: "Оновити %{name} |||| Оновити %{smart_count} %{name}",
+            clear_array_input: 'Ви впевнені що хочете видалити всі елементи',
             delete_content: "Ви впевнені що хочете видалити цей елемент?",
             delete_title: "Видалити %{name} #%{id}",
             details: "Деталі",
