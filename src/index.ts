@@ -1,4 +1,6 @@
-module.exports = {
+import type { TranslationMessages } from 'ra-core';
+
+const ukrainianMessages: TranslationMessages = {
     ra: {
         action: {
             add_filter: "Додати фільтр",
@@ -78,6 +80,7 @@ module.exports = {
         message: {
             about: "Довідка",
             are_you_sure: "Ви впевнені?",
+            auth_error: "Під час перевірки аутентифікації сталася помилка.",
             bulk_delete_content:
                 "Ви дійсно хочете видалити це %{name}? |||| Ви впевнені що хочете видалити ці %{smart_count} %{name}?",
             bulk_delete_title: "Видалити %{name} |||| Видалити %{smart_count} %{name} елементів",
@@ -170,8 +173,19 @@ module.exports = {
                 title: "Інспектор",
                 content: "Наведіть на UI елемент щоб налаштувати його",
                 reset: "Скинути налаштування",
+                hideAll: "Сховати всі",
+                showAll: "Відобразити всі",
+            },
+            Datagrid: {
+                title: "Таблиця",
+                unlabeled: "Безіменний стовпець №%{column}",
+            },
+            SimpleForm: {
+                title: "Форма",
+                unlabeled: "Безіменне поле вводу #%{input}",
             },
             SimpleList: {
+                title: "Список",
                 primaryText: "Основний текст",
                 secondaryText: "Вторинний текст",
                 tertiaryText: "Третинний текст",
@@ -179,3 +193,5 @@ module.exports = {
         },
     },
 };
+
+export default ukrainianMessages;
