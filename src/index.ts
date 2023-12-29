@@ -40,6 +40,7 @@ const ukrainianMessages: TranslationMessages = {
             open: "Відкрити",
             toggle_theme: "Змінити тему",
             select_columns: "Стовпці",
+            update_application: "Оновити програму",
         },
         boolean: {
             true: "Так",
@@ -143,6 +144,7 @@ const ukrainianMessages: TranslationMessages = {
             canceled: "Дія відмінена",
             logged_out: "Ваша логін-сессія завершена, будь ласка залогінтесь знову.",
             not_authorized: "Немає доступу до цього ресурсу.",
+            application_update_available: "Доступна нова версія програми",
         },
         validation: {
             required: "Обов'язково для заповнення",
