@@ -2,13 +2,31 @@
   "name": "ra-language-ukrainian",
   "version": "2.4.0",
   "description": "Ukrainian translations for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/koresar/ra-language-ukrainian.git"
+  },
+  "files": [
+    "*.md",
+    "dist",
+    "src"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "scripts": {
+      "build": "npm run build-cjs && npm run build-esm",
+      "build-cjs": "rimraf ./dist/cjs && tsc --outDir dist/cjs",
+      "build-esm": "rimraf ./dist/esm && tsc --outDir dist/esm --module es2015",
+      "watch": "tsc --outDir dist/esm --module es2015 --watch",
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+      "ra-core": "^4.12.0"
+  },
+  "devDependencies": {
+      "rimraf": "^3.0.2",
+      "typescript": "^5.1.3"
   },
   "keywords": [
     "react",
